@@ -1,65 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alaqan Love — Линейки продукции</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alaqan Love — Линейки</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Навигация -->
-  <nav>
-    <ul>
-      <li><a href="#kids">🍼 Детская</a></li>
-      <li><a href="#family">👨‍👩‍👧 Семейная</a></li>
-      <li><a href="#premium">🌿 Премиум</a></li>
-    </ul>
-  </nav>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Alaqan Love" />
+        <span>Alaqan&nbsp;Love</span>
+      </div>
+      <nav class="menu">
+        <a href="#kids">Детская</a>
+        <a href="#family">Семейная</a>
+        <a href="#premium">Премиум</a>
+      </nav>
+    </div>
+  </header>
 
-  <!-- Детская линейка -->
-  <section id="kids" class="section kids">
-    <div class="content">
-      <h2>🍼 Детская линейка</h2>
-      <img src="assets/kids.jpg" alt="Детская линейка">
-      <p><b>Слоган:</b> Нежность в каждой ладошке</p>
-      <ul>
-        <li>Фон пачки: нежно-голубой с облачками</li>
-        <li>Элементы: мишутка, цветочек, капелька воды</li>
-        <li>Цвет клапана: белый с голубой окантовкой</li>
-      </ul>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Чистота. Забота. Стиль.</h1>
+        <p>Три линии упаковки для разных сценариев — единый, выверенный визуальный код.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#kids">Смотреть линейки</a>
+        </div>
+      </div>
+      <div class="hero-logo">
+        <img src="assets/logo.png" alt="Alaqan Love Logo">
+      </div>
     </div>
   </section>
 
-  <!-- Семейная линейка -->
-  <section id="family" class="section family">
-    <div class="content">
-      <h2>👨‍👩‍👧 Семейная линейка</h2>
-      <img src="assets/family.jpg" alt="Семейная линейка">
-      <p><b>Слоган:</b> Чистота и забота для всей семьи</p>
-      <ul>
-        <li>Фон пачки: чистый голубой с серебристыми акцентами</li>
-        <li>Элементы: линии-волны, символ свежести</li>
-        <li>Цвет клапана: серебристый с логотипом</li>
-      </ul>
+  <!-- SECTIONS -->
+  <section id="kids" class="line">
+    <div class="container line-grid">
+      <div class="line-img"><img src="assets/kids.jpg" alt="Детская линейка"></div>
+      <div class="line-text">
+        <h2>🍼 Детская линейка</h2>
+        <ul class="bullets">
+          <li>Фон: нежно-голубой с облачками</li>
+          <li>Логотип по центру: ладони + сердечко</li>
+          <li>Иконки: мишка, цветок, капля</li>
+          <li>Слоган: «Нежность в каждой ладошке»</li>
+          <li>Клапан: белый с голубой окантовкой</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <!-- Премиум линейка -->
-  <section id="premium" class="section premium">
-    <div class="content">
-      <h2>🌿 Премиум линейка</h2>
-      <img src="assets/premium.jpg" alt="Премиум линейка">
-      <p><b>Слоган:</b> Свежесть и любовь в каждой детали</p>
-      <ul>
-        <li>Фон пачки: бирюзово-голубой градиент</li>
-        <li>Элементы: абстрактные водные капли</li>
-        <li>Цвет клапана: матовый серо-металлический</li>
-      </ul>
+  <section id="family" class="line alt">
+    <div class="container line-grid">
+      <div class="line-img"><img src="assets/family.jpg" alt="Семейная линейка"></div>
+      <div class="line-text">
+        <h2>👨‍👩‍👧 Семейная линейка</h2>
+        <ul class="bullets">
+          <li>Фон: чистый голубой + серебристые акценты</li>
+          <li>Логотип: руки формируют сердце с надписью</li>
+          <li>Элементы: лёгкие волны (свежесть)</li>
+          <li>Слоган: «Чистота и забота для всей семьи»</li>
+          <li>Клапан: серебристый с логотипом</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 Alaqan Love. Все права защищены.</p>
+  <section id="premium" class="line">
+    <div class="container line-grid">
+      <div class="line-img"><img src="assets/premium.jpg" alt="Премиум линейка"></div>
+      <div class="line-text">
+        <h2>🌿 Премиум линейка</h2>
+        <ul class="bullets">
+          <li>Фон: насыщенный бирюзово-голубой градиент</li>
+          <li>Лого: минимал, серебристо-белое</li>
+          <li>Элементы: водные капли / мягкий блеск</li>
+          <li>Слоган: «Свежесть и любовь в каждой детали»</li>
+          <li>Клапан: матовый серо-металлический</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <span>© 2025 Alaqan Love</span>
+    </div>
   </footer>
+
+  <a href="#top" class="to-top" aria-label="Наверх">↑</a>
+
+  <script>
+    // Активный пункт меню при прокрутке
+    const links = document.querySelectorAll('.menu a');
+    const ids = [...links].map(a => document.querySelector(a.getAttribute('href')));
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY + 120;
+      let active = 0;
+      ids.forEach((el,i)=>{ if (el.offsetTop <= y) active = i; });
+      links.forEach((l,i)=> l.classList.toggle('active', i===active));
+    });
+  </script>
 </body>
 </html>
