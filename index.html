@@ -5,109 +5,248 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Alaqan Love — Линейки</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
+<script src="assets/js/gallery.js" defer></script>
+<script src="assets/js/anchors.js" defer></script>
 <body>
-  <!-- NAV -->
-  <header class="nav">
+  <header class="site-nav" id="top">
     <div class="container nav-inner">
-      <div class="brand">
-        <img src="assets/logo.png" alt="Alaqan Love" />
+      <a class="brand" href="#top">
+        <img src="assets/logo.png" alt="Alaqan Love logo" />
         <span>Alaqan&nbsp;Love</span>
-      </div>
+      </a>
       <nav class="menu">
-        <a href="#kids">Детская</a>
-        <a href="#family">Семейная</a>
-        <a href="#premium">Премиум</a>
+        <a href="#kids" class="nav-link">Детская</a>
+        <a href="#family" class="nav-link">Семейная</a>
+        <a href="#premium" class="nav-link">Премиум</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <h1>Чистота. Забота. Стиль.</h1>
-        <p>Три линии упаковки для разных сценариев — единый, выверенный визуальный код.</p>
-        <div class="hero-cta">
-          <a class="btn" href="#kids">Смотреть линейки</a>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>Чистая эстетика повседневной заботы</h1>
+        <p>Три линейки упаковки: от мягкой детской до строгой премиальной — единая визуальная философия Alaqan Love.</p>
+
+        <div class="cta-row">
+          <a href="#kids" class="btn btn-primary">
+            Смотреть линейки <span class="arrow">→</span>
+          </a>
+          <a href="#premium" class="btn btn-ghost">
+            Премиум сразу <span class="arrow">↗</span>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="hero-art">
+        <div class="cover">
+          <img src="assets/kids.png" alt="Обложка — детская линейка">
         </div>
       </div>
-      <div class="hero-logo">
-        <img src="assets/logo.png" alt="Alaqan Love Logo">
-      </div>
     </div>
   </section>
 
-  <!-- SECTIONS -->
-  <section id="kids" class="line">
-    <div class="container line-grid">
-      <div class="line-img"><img src="assets/kids.jpg" alt="Детская линейка"></div>
-      <div class="line-text">
-        <h2>🍼 Детская линейка</h2>
-        <ul class="bullets">
-          <li>Фон: нежно-голубой с облачками</li>
-          <li>Логотип по центру: ладони + сердечко</li>
-          <li>Иконки: мишка, цветок, капля</li>
-          <li>Слоган: «Нежность в каждой ладошке»</li>
-          <li>Клапан: белый с голубой окантовкой</li>
+  <section id="kids" class="section">
+    <div class="container card">
+      <div class="card-media">
+        <div class="stage">
+          <img src="assets/kids.png" alt="Детская линейка — упаковка" data-stage="kids">
+        </div>
+        <div class="thumbs" data-group="kids">
+          <button class="thumb is-active" data-src="assets/kids.jpg" aria-label="Упаковка">
+            <img src="assets/kids.png" alt="">
+          </button>
+          <button class="thumb" data-src="assets/mockups/kids/tshirt.jpg" aria-label="Футболка">
+            <img src="assets/mockups/kids/tshirt.png" alt="">
+          </button>
+          <button class="thumb" data-src="assets/mockups/kids/cup.jpg" aria-label="Стакан">
+            <img src="assets/mockups/kids/cup.png" alt="">
+          </button>
+          <button class="thumb" data-src="assets/mockups/kids/bag.jpg" aria-label="Пакет">
+            <img src="assets/mockups/kids/bag.png" alt="">
+          </button>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <h2>Детская линейка</h2>
+        <p class="lead">Слоган: <b>«Нежность в каждой ладошке»</b></p>
+        <ul class="specs">
+          <li>Фон — нежно-голубой с облачками.</li>
+          <li>Логотип — ладони с сердечком по центру.</li>
+          <li>Элементы — мишка, цветок, капля воды.</li>
+          <li>Клапан — белый с голубой окантовкой.</li>
         </ul>
+        <div class="actions">
+          <a class="btn btn-ghost" href="#family">Дальше к семейной <span class="arrow">→</span></a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="family" class="line alt">
-    <div class="container line-grid">
-      <div class="line-img"><img src="assets/family.jpg" alt="Семейная линейка"></div>
-      <div class="line-text">
-        <h2>👨‍👩‍👧 Семейная линейка</h2>
-        <ul class="bullets">
-          <li>Фон: чистый голубой + серебристые акценты</li>
-          <li>Логотип: руки формируют сердце с надписью</li>
-          <li>Элементы: лёгкие волны (свежесть)</li>
-          <li>Слоган: «Чистота и забота для всей семьи»</li>
-          <li>Клапан: серебристый с логотипом</li>
+  <section id="family" class="section">
+    <div class="container card">
+      <div class="card-media">
+        <div class="stage">
+          <img src="assets/family.png" alt="Семейная линейка — упаковка" data-stage="family">
+        </div>
+        <div class="thumbs" data-group="family">
+          <button class="thumb is-active" data-src="assets/family.png" aria-label="Упаковка">
+            <img src="assets/family.png" alt="">
+          </button>
+          <button class="thumb" data-src="assets/mockups/family/tshirt.jpg" aria-label="Футболка">
+            <img src="assets/mockups/family/tshirt.png" alt="">
+          </button>
+          <button class="thumb" data-src="assets/mockups/family/cup.jpg" aria-label="Стакан">
+            <img src="assets/mockups/family/cup.png" alt="">
+          </button>
+          <button class="thumb" data-src="assets/mockups/family/bag.jpg" aria-label="Пакет">
+            <img src="assets/mockups/family/bag.png" alt="">
+          </button>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <h2>Семейная линейка</h2>
+        <p class="lead">Слоган: <b>«Чистота и забота для всей семьи»</b></p>
+        <ul class="specs">
+          <li>Фон — чистый голубой, серебристые акценты.</li>
+          <li>Лого — руки образуют сердце с надписью.</li>
+          <li>Элементы — лёгкие волны (символ свежести).</li>
+          <li>Клапан — серебристый с логотипом.</li>
         </ul>
+        <div class="actions">
+          <a class="btn btn-ghost" href="#premium">К премиуму <span class="arrow">→</span></a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="premium" class="line">
-    <div class="container line-grid">
-      <div class="line-img"><img src="assets/premium.jpg" alt="Премиум линейка"></div>
-      <div class="line-text">
-        <h2>🌿 Премиум линейка</h2>
-        <ul class="bullets">
-          <li>Фон: насыщенный бирюзово-голубой градиент</li>
-          <li>Лого: минимал, серебристо-белое</li>
-          <li>Элементы: водные капли / мягкий блеск</li>
-          <li>Слоган: «Свежесть и любовь в каждой детали»</li>
-          <li>Клапан: матовый серо-металлический</li>
+  <section id="premium" class="section">
+    <div class="container card">
+      <div class="card-media">
+        <div class="stage">
+          <img src="assets/premium.png" alt="Премиум линейка — упаковка" data-stage="premium">
+        </div>
+        <div class="thumbs" data-group="premium">
+          <button class="thumb is-active" data-src="assets/premium.png" aria-label="Упаковка">
+            <img src="assets/premium.png" alt="">
+          </button>
+          <button class="thumb" data-src="assets/mockups/premium/tshirt.jpg" aria-label="Футболка">
+            <img src="assets/mockups/premium/tshirt.png" alt="">
+          </button>
+          <button class="thumb" data-src="assets/mockups/premium/cup.jpg" aria-label="Стакан">
+            <img src="assets/mockups/premium/cup.png" alt="">
+          </button>
+          <button class="thumb" data-src="assets/mockups/premium/bag.jpg" aria-label="Пакет">
+            <img src="assets/mockups/premium/bag.png" alt="">
+          </button>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <h2>Премиум линейка</h2>
+        <p class="lead">Слоган: <b>«Свежесть и любовь в каждой детали»</b></p>
+        <ul class="specs">
+          <li>Фон — насыщенный бирюзово-голубой градиент.</li>
+          <li>Логотип — минималистичный, серебристо-белый.</li>
+          <li>Элементы — водные капли / мягкий блеск.</li>
+          <li>Клапан — матовый серо-металлический.</li>
         </ul>
+        <div class="actions">
+          <a class="btn btn-primary" href="#top">Наверх <span class="arrow">↑</span></a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container">
       <span>© 2025 Alaqan Love</span>
     </div>
   </footer>
 
-  <a href="#top" class="to-top" aria-label="Наверх">↑</a>
+<script>
+(function(){
+  document.querySelectorAll('.thumbs').forEach(strip => {
+    const card  = strip.closest('.card');
+    const group = strip.getAttribute('data-group') || 'default';
+    const stage = card ? card.querySelector(`img[data-stage="${group}"]`) : null;
+    if (!stage) return;
 
-  <script>
-    // Активный пункт меню при прокрутке
-    const links = document.querySelectorAll('.menu a');
-    const ids = [...links].map(a => document.querySelector(a.getAttribute('href')));
-    window.addEventListener('scroll', () => {
-      const y = window.scrollY + 120;
-      let active = 0;
-      ids.forEach((el,i)=>{ if (el.offsetTop <= y) active = i; });
-      links.forEach((l,i)=> l.classList.toggle('active', i===active));
+    const thumbs = Array.from(strip.querySelectorAll('.thumb'));
+
+    const getFullSrc = (thumbEl) =>
+      thumbEl.getAttribute('data-src') ||
+      (thumbEl.querySelector('img') ? thumbEl.querySelector('img').getAttribute('src') : '');
+
+    const setStage = (thumbEl) => {
+      const src = getFullSrc(thumbEl);
+      if (!src) return;
+
+      thumbs.forEach(t => t.classList.remove('is-active'));
+      thumbEl.classList.add('is-active');
+
+      stage.style.opacity = 0;
+      const img = new Image();
+      img.onload = () => {
+        stage.src = src;
+        const label = thumbEl.getAttribute('aria-label') || '';
+        if (label) stage.alt = label;
+        stage.style.opacity = 1;
+      };
+      img.src = src;
+    };
+
+    if (thumbs.length) setStage(thumbs[0]);
+
+    strip.addEventListener('click', (e) => {
+      const btn = e.target.closest('.thumb');
+      if (!btn) return;
+      e.preventDefault();
+      setStage(btn);
     });
-  </script>
+
+    strip.addEventListener('keydown', (e) => {
+      if (!['ArrowLeft','ArrowRight','Enter',' '].includes(e.key)) return;
+      e.preventDefault();
+      const activeIdx = Math.max(0, thumbs.findIndex(t => t.classList.contains('is-active')));
+      const nextIdx = e.key === 'ArrowRight' ? (activeIdx + 1) % thumbs.length
+                   : e.key === 'ArrowLeft'  ? (activeIdx - 1 + thumbs.length) % thumbs.length
+                   : activeIdx;
+      const target = (e.key === 'Enter' || e.key === ' ') ? (thumbs[activeIdx] || thumbs[0]) : thumbs[nextIdx];
+      setStage(target);
+      target.focus();
+    });
+
+    thumbs.forEach(t => {
+      t.addEventListener('mouseenter', () => {
+        const src = getFullSrc(t);
+        if (!src) return;
+        const img = new Image(); img.src = src;
+      });
+    });
+
+    let sx = null;
+    stage.addEventListener('touchstart', (e)=> sx = e.touches[0].clientX, {passive:true});
+    stage.addEventListener('touchend',   (e)=>{
+      if (sx == null) return;
+      const dx = e.changedTouches[0].clientX - sx;
+      if (Math.abs(dx) < 40) return;
+      const activeIdx = Math.max(0, thumbs.findIndex(t => t.classList.contains('is-active')));
+      const nextIdx = dx < 0 ? (activeIdx + 1) % thumbs.length
+                             : (activeIdx - 1 + thumbs.length) % thumbs.length;
+      setStage(thumbs[nextIdx]);
+      sx = null;
+    });
+  });
+})();
+</script>
+
 </body>
 </html>
